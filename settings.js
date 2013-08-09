@@ -32,29 +32,25 @@
 	THE SOFTWARE.
 */
 
-$(document).ready(function() {
+/*md# settings : object
+Set the behaviour of the startpage.
 
-/**
-	Simple configuration using (mostly) true/false settings. Use "true" to enable
-	feature, "false" to disable feature.
+To enable an option, set the value to "true".
+To disable an option, comment the line with "//" or set the value to "false".
 */
+var settings = {
+	newwindow: false /*md- newwindow | open links in new tab/window */
+	,focus: false /*md- focus | Focus on searchbox when opening */
+	,clock: true /*md- clock | Show/enable clock */
+	
+	/*md## Enable/disable various search engines */
+	,google: true /*md- google | "quicksearch": Google */
+	,googleimages: true /*md- googleimages | "quicksearch": Google image search*/
+	,yahoo: false /*md- yahoo | "quicksearch": Yahoo Search*/
+	,wikipedia: false /*md- wikipedia | "quicksearch": Wikipedia*/
+	,dictcc: false
+	,leo: false
+	,flickr: false
+	,deviantart: false
+};
 
-	// Open in new window_tab
-	newwindow = true;
-
-	// Enable/disable various search engines
-	google = true;
-	googleimages = false;
-	yahoo = false;
-	wikipedia = false;
-	dictcc = false;
-	leo = false;
-	flickr = false;
-	deviantart = false;
-
-	// Focus on searchbox when opening
-	focusSearch = false;
-
-	// Enable clock
-	showClock = true;
-});
